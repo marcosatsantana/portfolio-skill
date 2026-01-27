@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 import { ExternalLink } from 'lucide-react';
+import BarbeariasImg from '../../assets/barbearias.png';
+import VtexImg from '../../assets/vtex.png';
+import TotemImg from '../../assets/totem.png';
 
 interface Project {
   id: number;
@@ -23,6 +26,7 @@ export function Projects() {
       title: "Barbearias.app",
       description: "Plataforma SaaS completa para gestão e agendamento de barbearias. O sistema conecta clientes a estabelecimentos através de geolocalização e permite agendamento online com pagamentos integrados (Stripe).",
       tags: ["ReactJS", "NodeJS", "TypeScript", "PostgreSQL", "Stripe", "SaaS"],
+      image: BarbeariasImg,
       link: "#"
     },
     {
@@ -30,6 +34,7 @@ export function Projects() {
       title: "VTEX Catalog Automation",
       description: "Solução robusta para automação de catálogo VTEX. Scraper de fabricantes, tratamento de imagens via API, dashboard em tempo real.",
       tags: ["ReactJS", "NodeJS", "VTEX API", "Puppeteer", "Cloudinary", "SSE"],
+      image: VtexImg,
       link: "#"
     },
     {
@@ -37,6 +42,7 @@ export function Projects() {
       title: "Totem Interativo & CMS",
       description: "Ecossistema para autoatendimento digital. PWA para Totem e CMS administrativo. Controle de vídeo streaming e gestão hierárquica de produtos.",
       tags: ["ReactJS", "NodeJS", "PWA", "Video Streaming", "Multer"],
+      image: TotemImg,
       link: "#"
     },
     {
@@ -63,10 +69,10 @@ export function Projects() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, index) => {
+        {projects.map((project, _) => {
           // Asymmetrical layout logic: Every 3rd item spans 2 cols? Or just masonry?
           // For simplicity in grid, we can span-2 for the first item or key items.
-          const isFeatured = index === 0 || index === 2;
+          const isFeatured = 0;
 
           return (
             <motion.div
@@ -85,8 +91,18 @@ export function Projects() {
                 "bg-muted aspect-video w-full flex items-center justify-center text-muted-foreground font-mono text-sm relative overflow-hidden",
                 isFeatured ? "h-[300px] md:h-[400px]" : "h-[200px]"
               )}>
-                <div className="absolute inset-0 bg-accent/5 group-hover:bg-accent/10 transition-colors" />
-                <span className="z-10">[ Project Image Preview ]</span>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-accent/5 group-hover:bg-accent/10 transition-colors" />
+                    <span className="z-10">[ Project Image Preview ]</span>
+                  </>
+                )}
               </div>
 
               <div className="p-8 flex flex-col flex-1">
