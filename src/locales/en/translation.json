@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "role": "FullStack Developer",
+    "cta": "Talk to me",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Designer & Programmer",
+    "description": "Frontend and Backend Developer, experienced in SOLID architecture, with a focus on UI/UX design.",
+    "stats": {
+      "years": "Years",
+      "experience": "Experience",
+      "projects": "Projects",
+      "completed": "Completed",
+      "support": "Support",
+      "availability": "Online 24/7"
+    },
+    "downloadCv": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical skills"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "See my offered services",
+    "items": {
+      "productDesign": "Product Design",
+      "graphicDesign": "Graphic Design",
+      "marketing": "Digital Marketing",
+      "seeMore": "See More"
+    }
+  },
+  "experience": {
+    "title": "Qualifications",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "work": "Experience"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Client reviews",
+    "expand": "Expand"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Some of my projects",
+    "viewProject": "View Project"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Talk to me right now!",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "messenger": "Messenger",
+    "send": "Send",
+    "form": {
+      "title": "Tell me about your project",
+      "name": "Name",
+      "namePlaceholder": "Insert your name",
+      "email": "Email",
+      "emailPlaceholder": "Insert your email",
+      "project": "Project",
+      "projectPlaceholder": "Tell me about your project",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

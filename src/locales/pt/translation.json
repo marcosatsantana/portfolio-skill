@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "role": "Desenvolvedor FullStack",
+    "cta": "Fale comigo",
+    "scroll": "Deslize"
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Designer e Programador",
+    "description": "Desenvolvedor Frontend e Backend, com experiência em arquitetura SOLID, com cuidados em UI/UX designer.",
+    "stats": {
+      "years": "Anos",
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "completed": "Concluídos",
+      "support": "Suporte",
+      "availability": "Online 24/7"
+    },
+    "downloadCv": "Download CV"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Minhas habilidades técnicas"
+  },
+  "services": {
+    "title": "Serviços",
+    "subtitle": "Veja meus serviços oferecidos",
+    "items": {
+      "productDesign": "Designer Produtos",
+      "graphicDesign": "Design Gráfico",
+      "marketing": "Marketing Digital",
+      "seeMore": "Veja Mais"
+    }
+  },
+  "experience": {
+    "title": "Qualificações",
+    "subtitle": "Minha jornada pessoal",
+    "education": "Educação",
+    "work": "Experiência"
+  },
+  "testimonials": {
+    "title": "Avaliações",
+    "subtitle": "Avaliações de alguns clientes",
+    "expand": "Expandir"
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Alguns de meus projetos",
+    "viewProject": "Ver Projeto"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Fale comigo agora mesmo!",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "messenger": "Messenger",
+    "send": "Enviar",
+    "form": {
+      "title": "Conte-me sobre seu projeto",
+      "name": "Nome",
+      "namePlaceholder": "Coloque seu nome",
+      "email": "Email",
+      "emailPlaceholder": "Coloque seu e-mail",
+      "project": "Projeto",
+      "projectPlaceholder": "Fale sobre seu projeto",
+      "submit": "Enviar Mensagem"
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}
