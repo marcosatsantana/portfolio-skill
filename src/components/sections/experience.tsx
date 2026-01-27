@@ -112,8 +112,12 @@ export function Experience() {
               {/* Spacer for desktop 50% split */}
               <div className="flex-1 w-full md:w-1/2" />
 
-              {/* Center Dot */}
-              <div className="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 w-[12px] h-[12px] bg-accent rounded-full border-2 border-background z-10" />
+              {/* Center Dot with Pulse Effect */}
+              <div className="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 flex items-center justify-center z-10">
+                <div className="w-4 h-4 rounded-full bg-accent relative">
+                  <div className="absolute inset-0 rounded-full bg-accent animate-ping opacity-25"></div>
+                </div>
+              </div>
 
               {/* Content Side */}
               <div className={cn(
@@ -121,26 +125,29 @@ export function Experience() {
                 isEven ? "md:pr-12 md:text-right" : "md:pl-12 md:text-left"
               )}>
                 <div className={cn(
-                  "p-6 border border-border bg-card hover:border-accent transition-colors relative group",
+                  "p-6 rounded-2xl border border-border/50 bg-card/40 backdrop-blur-sm shadow-sm hover:shadow-md hover:border-accent/50 transition-all duration-300 relative group",
                   isEven ? "md:origin-right" : "md:origin-left"
                 )}>
                   {/* Connecting Line Horizontal */}
                   <div className={cn(
-                    "hidden md:block absolute top-1/2 w-12 h-[2px] bg-border transition-colors group-hover:bg-accent/50",
-                    isEven ? "right-[-49px] " : "left-[-49px]"
+                    "hidden md:block absolute top-1/2 w-12 h-[2px] bg-gradient-to-r from-border to-transparent transition-colors",
+                    isEven ? "right-[-49px] scale-x-[-1]" : "left-[-49px]"
                   )} />
 
                   {item.type === 'work' ? (
-                    <Briefcase className={cn("w-5 h-5 mb-2 text-muted-foreground", isEven ? "md:ml-auto" : "")} />
+                    <Briefcase className={cn("w-5 h-5 mb-2 text-accent/80", isEven ? "md:ml-auto" : "")} />
                   ) : (
-                    <GraduationCap className={cn("w-5 h-5 mb-2 text-muted-foreground", isEven ? "md:ml-auto" : "")} />
+                    <GraduationCap className={cn("w-5 h-5 mb-2 text-accent/80", isEven ? "md:ml-auto" : "")} />
                   )}
 
-                  <span className="inline-block px-2 py-1 bg-accent/10 text-accent text-xs font-mono font-bold mb-2 rounded-sm border border-accent/20">
+                  <span className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-mono font-bold mb-3 rounded-full border border-accent/20">
                     {item.period}
                   </span>
-                  <h4 className="text-xl font-bold font-display">{item.title}</h4>
-                  <p className="text-muted-foreground">{item.organization}</p>
+                  <h4 className="text-xl font-bold font-display tracking-tight">{item.title}</h4>
+                  <p className="text-muted-foreground font-medium">{item.organization}</p>
+
+                  {/* Decorative Glow */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             </motion.div>

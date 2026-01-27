@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Section } from '../layout/section';
 import { MagicCard } from '../magicui/magic-card';
+import { BorderBeam } from '../magicui/border-beam';
 import { Palette, Share2, Box } from 'lucide-react';
 
 export function Services() {
@@ -35,17 +36,20 @@ export function Services() {
         {services.map((service, index) => (
           <MagicCard
             key={index}
-            className="flex flex-col items-center justify-center p-8 text-center min-h-[300px] border-border"
+            className="flex flex-col items-center justify-center text-center min-h-[300px] overflow-hidden"
             gradientColor="hsl(var(--accent))"
             gradientOpacity={0.10}
           >
-            <service.icon className="w-12 h-12 mb-6 text-accent" />
-            <h4 className="text-2xl font-display font-bold mb-4">
-              {service.title}
-            </h4>
-            <p className="text-muted-foreground leading-relaxed">
-              {service.description}
-            </p>
+            <div className="m-8">
+              <service.icon className="w-12 h-12 mb-6 text-accent" />
+              <h4 className="text-2xl font-display font-bold mb-4">
+                {service.title}
+              </h4>
+              <p className="text-muted-foreground leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+            <BorderBeam size={250} duration={12} delay={9} colorFrom="#85b82c" colorTo="#85b82c00" className="from-accent/50 to-transparent rounded-xl" />
           </MagicCard>
         ))}
       </div>

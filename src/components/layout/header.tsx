@@ -22,7 +22,7 @@ export function Header() {
     )}>
       <div className="flex items-center gap-2">
         <span className="text-xl font-display font-bold tracking-tighter">
-          MK<span className="text-accent">.</span>
+          MT<span className="text-accent">.</span>
         </span>
       </div>
 
