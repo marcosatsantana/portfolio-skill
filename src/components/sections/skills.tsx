@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Section } from '../layout/section';
 import { Marquee } from '../magicui/marquee';
 import { RetroGrid } from '../magicui/retro-grid';
 import { cn } from '../../lib/utils';
