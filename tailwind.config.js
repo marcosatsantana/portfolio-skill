@@ -46,7 +46,7 @@ export default {
       animation: {
         'marquee': 'marquee 25s linear infinite',
         'marquee-reverse': 'marquee-reverse 25s linear infinite',
-        'grid': 'grid 15s linear infinite',
+        'grid': 'grid 65s linear infinite',
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
       },
       keyframes: {

@@ -28,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-xl md:text-2xl font-mono text-accent mb-2">
-              MarcosTeles.me
+              marcosteles.me
             </h2>
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] tracking-tighter uppercase">
               {t('hero.role').split(' ').map((word, i) => (
